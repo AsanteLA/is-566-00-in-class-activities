@@ -1,7 +1,8 @@
 services:
   web:
     build: app/.
+    container_name: web_server
     ports:
-      - "8000:5000"
+      - "8000:5000" # Host(my computer):Container ( docker container port)
   redis:
     image: "redis:alpine"
