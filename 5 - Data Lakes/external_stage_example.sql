@@ -1,4 +1,4 @@
-USE database this_db;
+USE database HYENA_DB;
 
 use schema scarif;
 
