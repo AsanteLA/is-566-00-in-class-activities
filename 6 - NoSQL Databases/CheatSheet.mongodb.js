@@ -35,6 +35,8 @@ db.books.distinct("author")
 // ## 2. Comparison Operators
 // Retrieve books based on numerical comparisons.
 
+//where oublished year > 2000
+
 db.books.find({published_year: {$gt: 2000}}) // Books published after 2000
 db.books.find({published_year: {$gte: 1990}}) // Books published in or after 1990
 db.books.find({published_year: {$lt: 1980}}) // Books published before 1980
